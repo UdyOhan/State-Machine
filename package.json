@@ -1,0 +1,21 @@
+{
+  "name": "com.udomdev.statemachine",
+  "version": "1.0.0",
+  "displayName": "State Machine",
+  "description": "State Machine is tool used for managing states and condition for AI, Dialogue System and so on.",
+  "unity": "2021.1",
+  "dependencies": {
+    "com.unity.ui": "1.0.0"
+  },
+  "keywords": [
+    "keyword1",
+    "keyword2",
+    "keyword3"
+  ],
+  "author": {
+    "name": "Ohanwe Chibudom",
+    "email": "chibudomohanwe@outlook.com",
+    "url": "https://github.com/UdyOhan"
+  },
+  "type": "library"
+}

@@ -1,0 +1,6 @@
+
+
+
+Pill #node-border{
+	-unity-background-image-tint-color: rgba(5, 256, 8, 1);
+}

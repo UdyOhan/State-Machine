@@ -1,0 +1,67 @@
+:root {
+  --color-visited: red;
+  --color-left: yellow;
+  --color-unvisited: black;
+
+  --width-visited: 3px;
+  --radius-border: 6px;
+ 
+  --color-highlight : #44C0FF;
+  --color-ref: #935813;
+  --color-text: #FAFAFA;
+}
+
+#title {
+    background-color: rgba(29, 115, 57, 0.91);
+}
+
+#delete{
+    background-color: rgba(200, 34, 23, 0.9);
+}
+
+#add{
+    background-color: rgba(100, 256, 100, 0.3);
+    color: rgba(256, 256, 256, 1);
+    
+}
+
+Node #title-label{
+    color: white;
+}
+Node #node-border{
+    border-width: 1px;
+}
+
+StateNode {
+    width: 250px;
+}
+.node-highlight{
+    border-color: var(--color-highlight);
+    
+    border-radius: var(--radius-border);
+    border-width: 2px;
+}
+
+#visited, #left{
+    
+    border-width: var(--width-visited);
+    border-radius: var(--radius-border);
+    padding: 0px;
+}
+
+#visited{
+    border-color: var(--color-visited);
+   
+}
+
+#left{
+    border-color: var(--color-left);
+}
+
+ReferenceNode #title{
+    background-color: var(--color-ref);
+}
+
+#ENTRY{
+    width: 100px;
+}
