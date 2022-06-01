@@ -26,12 +26,14 @@ namespace StateMachine.Editor
             styleSheets.Add(styleSheet);
             var stateIndex = this.Q<DropdownField>().index;
          
+            //Generate reference if one is not provided
             if(reference != null)
             {
                 this.reference = reference;
                 this.Q<DropdownField>().index = reference.StateIndex;
                 stateIndex = reference.StateIndex;
                 
+                //On load, the -1 acts as a fill in for potential errors which should be removed
                 if (reference.EdgeIndices.Contains(-1))
                 {
                     reference.EdgeIndices.RemoveAll(x => x == -1);
@@ -47,6 +49,8 @@ namespace StateMachine.Editor
                 };
                 
             }
+
+            //Get a state node referenced by the EdgeReference data
             stateNode = graphView.GetStateNodeByIndex(stateIndex);
             if (stateNode != null)
             {
@@ -78,8 +82,6 @@ namespace StateMachine.Editor
             {
                 if(stateNode != null)
                 {
-                  
-                    
                     stateNode.RemoveFromClassList(HIGHLIGHT_STR);
                     
                     stateNode = graphView.GetStateNodeByIndex(field.index);
@@ -90,7 +92,6 @@ namespace StateMachine.Editor
                     {
                         OnSelected();
                     }
-                    
                 }
                 
             });
@@ -102,6 +103,7 @@ namespace StateMachine.Editor
 
         public override void OnSelected()
         {
+            //Highligth the referenced state on selection
             base.OnSelected();
             if (stateNode == null) return;
             stateNode.OnSelected();
@@ -110,7 +112,7 @@ namespace StateMachine.Editor
 
         public override void OnUnselected()
         {
-
+            //Store the position and dehighlight the referenced state node on unselection
             reference.position = GetPosition().position;
             base.OnUnselected();
             if (stateNode == null) return;
