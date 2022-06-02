@@ -13,13 +13,11 @@ State Machine includes:
 ## About
 This package is serves as a library to make state-based systems like AI, and dialogue systems. 
 
-This package is available in the package com.udomdev.statemachine. 
-
 ## State Machine components
 A state machine is made up of 3 components: 
 1. **State**: This represents a state or set of action within a system.<br/> (For example: fighting, searching and resting in RPGs)
 
-1. **Condition**: This represent certain condition or a set of actions that must be completed<br/> (For example: if an enemy chases the player, the NPC must pursue the player)
+1. **Condition**: This represents a certain condition or a set of actions that must be completed to enter a state<br/> (For example: If an enemy see the player, the enemy procedes to pursue the player)
 
 1. **Manager**: This manages all the states and condition within the system.
 
