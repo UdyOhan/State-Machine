@@ -13,6 +13,9 @@ State Machine includes:
 ## About
 This package is serves as a library to make state-based systems like AI, and dialogue systems. 
 
+## Dependencies
+This package requires the Unity UI Toolkit package to operate. Go to
+
 ## State Machine components
 A state machine is made up of 3 components: 
 1. **State**: This represents a state or set of action within a system.<br/> (For example: fighting, searching and resting in RPGs)
@@ -32,7 +35,10 @@ These are the major steps in order to use this package:
 1. Create a state manager asset
 
 ### Creating The Class for your State Manager
-Create a class that derives from the generic StateManager class
+Create a class that derives from the generic StateManager class by
+- Using the namespace **StateMachine**
+- Deriving from the generic class **StateManager\<T\>** where T is a Unity Component type parameter
+ 
 ```
 using System;
 using System.Collections;
@@ -58,7 +64,10 @@ public class SampleTransformStateManager : StateManager<Transform>
 ```
 
 ### Creating The Base Class for your States 
-Create a abstract class from the generic State class. Make sure to use the same type parameter as above
+Create a abstract class from the generic State class by
+- Using the namespace **StateMachine**
+- Deriving from the generic class **State\<T\>** where T is a Unity Component type parameter
+- Make sure to use the same type parameter as above
 
 (This is optional, but It is highly advised to do)
 ```
@@ -74,7 +83,10 @@ public abstract class SampleTransformBaseState : State<Transform>
 ```
 
 ### Creating The Base Class for your Condition
-Create an abstract class from the generic Condition class.  Make sure to use the same type parameter as above
+Create an abstract class from the generic Condition class by
+- Using the namespace **StateMachine**
+- Deriving from the generic class **Condition\<T\>** where T is a Unity Component type parameter
+- Make sure to use the same type parameter as above
 
 ```
 using System.Collections;
@@ -90,7 +102,9 @@ public abstract class SampleTransformBaseCondition : Condition<Transform>
 ```
 
 ### Create Derived State classes
-Create State classes that derived form the base state class created above or from the base generic state class of same type parameter
+Create State classes that derived from 
+- The base State class created above or 
+- The base generic State class of same type parameter(In this case "State\<Transform\>")
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -162,7 +176,9 @@ public class MoveInCircles : SampleTransformBaseState
 ```
 
 ### Create Derived Condition classes
-Create Condition classes that derived form the base condition class created above or from the base generic condition class of same type parameter
+Create Condition classes that derived from 
+- The base Condition class created above or 
+- The base generic Condition class of same type parameter(In this case "Condition\<Transform\>")
 ```
 using System.Collections;
 using System.Collections.Generic;
@@ -196,14 +212,22 @@ public class SampleKeyCondition : SampleTransformBaseCondition
 }
 ```
 ### Create the asset
-Create the scriptable object asset of the State Manager derived class. Double click on it to open the graph to use.
+Create the scriptable object asset of the State Manager derived class.
 
 ![Asset Selection](Pictures/Asset%20Screenshot.png)
-Asset Selection
 
-Double click on it to open the graph to use.
+- Double click on it to open the graph to use.
+
+- Create a state node
+
+![State Creation](Pictures/state-node-creation.gif)
+
+- Create a condition node
+ 
+![State Creation](Pictures/condition-node-creation.gif)
+
+- Make your connections
 
 ![Graph Selection](Pictures/Graph%20Screenshot.png)
-State Machine Graph
 
 Enjoy!!
