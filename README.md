@@ -200,4 +200,12 @@ public class SampleKeyCondition : SampleTransformBaseCondition
 ### Create the asset
 Create the scriptable object asset of the State Manager derived class. Double click on it to open the graph to use.
 
+![Asset Selection](Pictures/Asset%20Screenshot.png)
+Asset Selection
+
+Double click on it to open the graph to use.
+
+![Graph Selection](Pictures/Graph%20Screenshot.png)
+State Machine Graph
+
 Enjoy!!
