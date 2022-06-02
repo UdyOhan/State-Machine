@@ -218,13 +218,15 @@ Create the scriptable object asset of the State Manager derived class.
 
 - Double click on it to open the graph to use.
 
+![Graph Creation](Pictures/Empty%20graph.png)
+
 - Create a state node
 
 ![State Creation](Pictures/state-node-creation.gif)
 
 - Create a condition node
  
-![State Creation](Pictures/condition-node-creation.gif)
+![Condition Creation](Pictures/condition-node-creation.gif)
 
 - Make your connections
 
