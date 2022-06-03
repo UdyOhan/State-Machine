@@ -8,14 +8,24 @@
     "com.unity.ui": "1.0.0"
   },
   "keywords": [
-    "keyword1",
-    "keyword2",
-    "keyword3"
+    "state machine",
+    "com.udomdev.statemachine",
+    "udomdev",
+    "com.udomdev",
+    "State Manager",
+    "State Machine"
   ],
   "author": {
     "name": "Ohanwe Chibudom",
     "email": "chibudomohanwe@outlook.com",
     "url": "https://github.com/UdyOhan"
-  }
- 
+  },
+  "samples": [
+    {
+      "displayName": "State Machine Example",
+      "description": "This sample showcase a state machine at work",
+      "path": "Samples~"
+    }
+  ]
+
 }

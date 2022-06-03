@@ -247,7 +247,7 @@ namespace StateMachine.Editor
                             if (!stateEdge.HasValue) { continue; }
 
 
-                            foreach (var node in nodes)
+                            foreach (var node in nodes) 
                             {
                                 if (node.name == REFERENCE_NAME && edge.input.node != node)
                                 {
@@ -309,7 +309,7 @@ namespace StateMachine.Editor
                 portEnumerator.MoveNext();
                 if (localPortEnumerator.Current.input.node == portEnumerator.Current.input.node)
                 {
-                    count++;
+                    count++; 
                 }
                 
             }
@@ -575,7 +575,7 @@ namespace StateMachine.Editor
         public void SetStateAsLeft(int index)
         {
             var state = allStates[index];
-            foreach(var node in nodes) 
+            foreach(var node in nodes)  
             {
 
                 if (node.name == ENTRYNODE_NAME || node.name == REFERENCE_NAME)
