@@ -263,11 +263,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3768f67b85f0b1c429031d2c2a84931a, type: 3}
   m_Name: Octagon Path
   m_EditorClassIdentifier: 
-  statePosition: {x: 855.19995, y: 459.2}
+  statePosition: {x: 855.2, y: 459.2}
   GUID: c36c259f13c91234db4fb924d1a5ca01
   length: 20
   points: []
-  noOfPoints: 20
+  noOfPoints: 8
   speed: 10
   index: 0
   rotatePoints: 1
@@ -323,11 +323,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3768f67b85f0b1c429031d2c2a84931a, type: 3}
   m_Name: Heptagon Paht
   m_EditorClassIdentifier: 
-  statePosition: {x: 854.4, y: 227.20001}
+  statePosition: {x: 854.39996, y: 227.20001}
   GUID: 645fff6118fa876489a005ba0ac38ee8
   length: 20
   points: []
-  noOfPoints: 20
+  noOfPoints: 7
   speed: 10
   index: 0
   rotatePoints: 1
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3768f67b85f0b1c429031d2c2a84931a, type: 3}
   m_Name: Hexagon Paht
   m_EditorClassIdentifier: 
-  statePosition: {x: 853.6, y: -9.6}
+  statePosition: {x: 853.60004, y: -9.6}
   GUID: 7ba1f0a00e092da4394fc36f686245f6
   length: 20
   points:
