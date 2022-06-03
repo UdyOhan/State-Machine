@@ -14,7 +14,7 @@ State Machine includes:
 This package is serves as a library to make state-based systems like AI, and dialogue systems. 
 
 ## Dependencies
-This package requires the Unity UI Toolkit package to operate. Go to the package manager. On the top left corner, click on the plus or "+ icon, 
+This package requires the Unity UI Toolkit package to operate. Go to the package manager. On the top left corner, click on the plus or "+" icon, 
 click on the "add package from git URL", type in **com.unity.ui**. Then install the package.
 
 ## State Machine components
