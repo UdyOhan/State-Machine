@@ -5,7 +5,7 @@
   "description": "A State Machine is a tool used for managing states and condition for AI, Dialogue System and so on.\n\nThis package enables you to create a state machine of any Unity Component type",
   "unity": "2021.1",
   "dependencies": {
-    "com.unity.ui": "1.0.0"
+    "com.unity.ui": "1.0.0-preview.18"
   },
   "keywords": [
     "state machine",
