@@ -17,6 +17,10 @@ This package is serves as a library to make state-based systems like AI, and dia
 This package requires the Unity UI Toolkit package to operate. Go to the package manager. On the top left corner, click on the plus or "+" icon, 
 click on the "add package from git URL", type in **com.unity.ui**. Then install the package.
 
+## Installation
+Go to the package manager. On the top left corner, click on the plus or "+" icon, click on the "add package from git URL", copy the git url address of this project
+and paste in it into the text field. Then install the package
+
 ## State Machine components
 A state machine is made up of 3 components: 
 1. **State**: This represents a state or set of action within a system.<br/> (For example: fighting, searching and resting in RPGs)
