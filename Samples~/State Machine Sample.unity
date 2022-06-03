@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd241d50d48fe404db2d0a6c44a269a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateManager: {fileID: 11400000, guid: 34b3dc1bf6761b44182fd58ffe2b62f8, type: 2}
+  stateManager: {fileID: 11400000, guid: ca70828856737e04cab4747ef3ed0d51, type: 2}
 --- !u!4 &387621980
 Transform:
   m_ObjectHideFlags: 0
@@ -353,7 +353,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4eed015f105d6c449b299e2e6d1d1fa6, type: 2}
+  - {fileID: 2100000, guid: b253072a50ce6384992b104089211bc9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -530,7 +530,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c69f9476232c56942a1010def0c8f4f0, type: 2}
+  - {fileID: 2100000, guid: 911cb8b1d8da25c459c0e2495c78cead, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -673,7 +673,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 84f25185e0d1314439272ccf8568b968, type: 2}
+  - {fileID: 2100000, guid: bbd60f9254405a24f9aabc33ec1cbf02, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
